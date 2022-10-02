@@ -1,6 +1,7 @@
+import sklearn
 from flask import Flask, render_template, request
 from model import load, prediksi
-import sklearn
+
 app = Flask(__name__)
 
 # load model dan scaler
@@ -26,4 +27,3 @@ def predict():
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", debug=True)
-    app.run()
